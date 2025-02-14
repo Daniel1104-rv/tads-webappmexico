@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de México Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🇲🇽 Bandera de México Interactiva 🇲🇽</h1>
+        <div class="flag-container">
+            <!-- Nombre a la izquierda -->
+            <span class="name-right">HECHO POR: DANIEL RODRIGUEZ DEL VALLE<br>21200665</span>
+
+            <!-- Bandera -->
+            <div class="flag">
+                <div id="green-box" class="color-box"></div>
+                <div id="white-box" class="color-box"></div>
+                <div id="red-box" class="color-box"></div>
+            </div>
+
+            <!-- Nombre a la derecha -->
+            <span class="name-left">HECHO POR:<br> ALAN ALFREDO CALVA HERNANDEZ<br>21200645</span>
+        </div>
+
+        <div class="controls">
+            <!-- Control para el Verde -->
+            <div class="control-section">
+                <label for="green-slider">🌿 Esperanza (Verde):</label>
+                <input type="range" id="green-slider" min="0" max="255" value="153">
+                <span id="green-hex">#009900</span>
+            </div>
+            <!-- Control para el Rojo -->
+            <div class="control-section">
+                <label for="red-slider">❤️ Sangre de los Héroes (Rojo):</label>
+                <input type="range" id="red-slider" min="0" max="255" value="157">
+                <span id="red-hex">#9D0000</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
